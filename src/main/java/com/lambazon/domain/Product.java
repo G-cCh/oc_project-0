@@ -64,7 +64,7 @@ public class Product {
 	}
 
 	public double getInventoryPrice() {
-		// TODO Auto-generated method stub
-		return 0.0;
+		//Returns the price of the inventory, ie quantity multiplied by the price
+		return quantity * price;
 	}
 }
