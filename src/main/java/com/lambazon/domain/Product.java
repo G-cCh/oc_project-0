@@ -65,7 +65,16 @@ public class Product {
 	}
 
 	public void setPrice(double price) {
-		this.price = price;
+		//price is between 0 and 1000
+		if(price < 0) {
+			this.price = 0.00;
+		}
+		else if(price > 1000) {
+			this.price = 1000;
+		}
+		else {
+			this.price = price;
+		}
 	}
 
 	public double getInventoryPrice() {
